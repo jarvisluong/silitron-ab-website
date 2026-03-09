@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silitron Ab — Investment & Consulting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --ink: #0a0f1a;
+            --slate: #2c3345;
+            --steel: #6b7280;
+            --mist: #c5cad6;
+            --snow: #f0f2f5;
+            --white: #fafbfc;
+            --accent: #3d6b8e;
+            --warm: #d4a853;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html { font-size: 16px; }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            color: var(--ink);
+            background: var(--white);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ── NAV ── */
+        nav {
+            width: 100%;
+            padding: 1.5rem 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .logo {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.35rem;
+            letter-spacing: 0.02em;
+            color: var(--ink);
+        }
+
+        .logo span {
+            font-weight: 400;
+            color: var(--steel);
+            margin-left: 0.3rem;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.8rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            vertical-align: middle;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--slate);
+            font-size: 0.85rem;
+            font-weight: 400;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover { color: var(--accent); }
+
+        /* ── MAIN ── */
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4rem 3rem;
+            text-align: center;
+        }
+
+        .placeholder {
+            max-width: 520px;
+        }
+
+        .placeholder h1 {
+            font-family: 'DM Serif Display', serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            line-height: 1.2;
+            color: var(--ink);
+            margin-bottom: 1rem;
+        }
+
+        .placeholder p {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: var(--steel);
+            font-weight: 300;
+        }
+
+        .placeholder .tagline {
+            font-size: 0.75rem;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 1.5rem;
+        }
+
+        /* ── FOOTER ── */
+        footer {
+            background: var(--ink);
+            padding: 2rem 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        footer p {
+            font-size: 0.78rem;
+            color: var(--steel);
+            font-weight: 300;
+        }
+
+        footer .logo {
+            color: var(--mist);
+            font-size: 1.1rem;
+        }
+
+        footer .logo span { color: var(--steel); }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 640px) {
+            nav { padding: 1.25rem 1.5rem; }
+            .nav-links { display: none; }
+            main { padding: 3rem 1.5rem; }
+            footer {
+                padding: 1.5rem;
+                flex-direction: column;
+                gap: 0.75rem;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <div class="logo">Silitron <span>Ab</span></div>
+        <ul class="nav-links">
+            <li><a href="https://www.linkedin.com/in/jarvisluong/" target="_blank" rel="noopener">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- MAIN -->
+    <main>
+        <div class="placeholder">
+            <p class="tagline">Investment & Consulting</p>
+            <h1>Silitron Ab</h1>
+            <p>A Finnish investment and consulting company. Deploying capital with conviction and providing focused advisory to select clients.</p>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="logo">Silitron <span>Ab</span></div>
+        <p>&copy; 2026 Silitron Ab. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
